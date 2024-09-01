@@ -1,11 +1,11 @@
 import React from 'react';
-import './Card.scss';
+import './Cards.scss';
 
 function Card({ title, cover }) {
     return (
         <div className="card">
-            <img src={cover} alt={title} className="card__image" />
-            <h3 className="card__title">{title}</h3>
+            <img src={cover} alt={title} className="card-image" />
+            <h2 className="card-title">{title}</h2>
         </div>
     );
 }

@@ -18,6 +18,7 @@ body {
 a {
     text-decoration: none;
     color: initial;
+    cursor: pointer;
 }
 
 li {
@@ -36,9 +37,11 @@ main {
     display: none !important;
 }
 
-@media (max-width:724px) {
-    main {
-        margin: 1rem 1rem;
+// Définition de la mixin pour les media queries
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'mobile' {
+      @media (max-width: 724px) {
+        @content;
+      }
     }
-    
-}
+  }
