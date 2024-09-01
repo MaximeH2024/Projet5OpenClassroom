@@ -1,0 +1,34 @@
+@import '../../Styles/styles.scss';
+
+// Définition des mixins pour les media queries
+@mixin card-height($height) {
+    height: $height;
+}
+
+.card {
+    @include card-height(340px); // Hauteur par défaut
+
+    article {
+        background-size: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        padding: 1rem;
+
+        h2 {
+            color: $white;
+            font-size: 18px;
+        }
+    }
+
+    // Media queries
+    @include respond-to('tablet') {
+        @include card-height(300px);
+    }
+
+    @include respond-to('mobile') {
+        @include card-height(225px);
+    }
+}

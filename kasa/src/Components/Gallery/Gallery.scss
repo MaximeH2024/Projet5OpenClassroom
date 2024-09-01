@@ -1,0 +1,32 @@
+@import '../../Styles/styles.scss';
+
+// Définition des mixins pour les media queries
+@mixin gallery-layout($columns, $gap) {
+    grid-template-columns: repeat($columns, $gap);
+}
+
+.gallery {
+    background-color: $very-light-grey-color;
+    border-radius: 25px;
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    @include gallery-layout(3, 32%);
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+
+    // Media queries
+    @include respond-to('tablet') {
+        @include gallery-layout(2, 49%);
+    }
+
+    @include respond-to('mobile') {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        padding: 0;
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+}

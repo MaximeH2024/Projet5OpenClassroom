@@ -1,0 +1,60 @@
+@import '../../styles/styles.scss';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+
+    div {
+        display: flex;
+        align-items: end;
+        gap: 5px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 57px;
+        
+        a {
+            font-weight: 500;
+            font-size: 24px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media (max-width:724px) {
+    header {
+        margin: 1rem;
+
+        .logo {
+            img {
+                width: 25px;
+            }
+        }
+        
+        nav {
+            gap: 20px;
+
+            a {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+    }
+    
+}

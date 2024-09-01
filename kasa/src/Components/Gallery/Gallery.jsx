@@ -1,16 +1,22 @@
-import data from '../../Data/logements.json'
+import React from 'react';
+import data from '../../Data/logements.json';
+import Cards from '../Components/Cards/Cards';
+import './Gallery.scss';
 
 function Gallery() {
-    
-    const announceList = data.map((announce, i) =>
-        <AnnouncePreview key={i}  id={announce.id} cover={announce.cover} title={announce.title}/>
-    );
-   
+    const logements = data.map(logement => (
+        <Cards 
+            key={logement.id} 
+            title={logement.title} 
+            cover={logement.cover} 
+        />
+    ));
+
     return (
         <section className="gallery">
-            {announceList}
+            {logements}
         </section>
-    )
+    );
 }
 
-export default Gallery
+export default Gallery;
