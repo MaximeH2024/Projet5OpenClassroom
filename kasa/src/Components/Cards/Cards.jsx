@@ -1,13 +1,25 @@
-import React from 'react';
 import './Cards.scss';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function Card({ title, cover }) {
-    return (
-        <div className="card">
-            <img src={cover} alt={title} className="card-image" />
-            <h2 className="card-title">{title}</h2>
-        </div>
-    );
+
+const Cards = (props) => {
+  const handleClick = () => {
+    window.scrollTo({ top: 0 });
+  };
+  return (
+    <Link className='annonce-preview' to={`/annonces/${props.id}`} key={props.id} onClick={handleClick}>
+        <article style={{ backgroundImage: `url(${props.cover})` }}>
+            <h2>{props.title}</h2>
+        </article>
+    </Link>
+  )
 }
 
-export default Card;
+Cards.propTypes = {
+  id: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default Cards
