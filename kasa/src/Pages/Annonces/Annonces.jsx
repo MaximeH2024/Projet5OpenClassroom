@@ -3,7 +3,7 @@ import { AnnonceContext } from "../../Context/Context";
 import { useParams, Navigate } from "react-router-dom";
 import AnnonceView from "../../components/AnnonceView/AnnonceView";
 
-function annonces() {
+function Annonces() {
     const {data} = useContext(AnnonceContext)
     const {annonceId} = useParams()
     const annonce = data.find((annonce)=> annonce.id === annonceId)
@@ -19,4 +19,4 @@ function annonces() {
       )
 }
 
-export default annonces
+export default Annonces

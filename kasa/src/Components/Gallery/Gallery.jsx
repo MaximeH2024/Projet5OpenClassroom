@@ -4,9 +4,10 @@ import './Gallery.scss';
 import Cards from '../../Components/Cards/Cards';
 
 function Gallery() {
-    const logements = data.map(logement => (
+    const logements = data.map((logement,i ) => (
         <Cards 
-            key={logement.id} 
+            key={i} 
+            id={logement.id}
             title={logement.title} 
             cover={logement.cover} 
         />

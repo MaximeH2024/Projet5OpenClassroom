@@ -1,7 +1,7 @@
 
 import './AnnonceView.scss';
 import Slideshow from '../Slideshow/Slideshow';
-import Rating from '../Rating/Rating';
+import Rating from '../../Components/Rating/Rating';
 import Tags from '../Tags/Tags';
 import PropTypes from 'prop-types';
 import Collapse from '../Collapse/Collapse';

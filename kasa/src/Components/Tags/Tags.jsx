@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 
 const Tags = (props) => {
-    const {announce} = props
-    const announceTag = announce.tags 
+    const {annonce} = props
+    const annonceTag = annonce.tags 
     
 
   return (
     <div className="tags">
-      {announceTag.map((tag, index) => (
+      {annonceTag.map((tag, index) => (
         <h4 key={index}>{tag}</h4>
       ))}
     </div>
@@ -17,7 +17,7 @@ const Tags = (props) => {
 }
 
 Tags.propTypes = {
-  announce: PropTypes.object.isRequired,
+  annonce: PropTypes.object.isRequired,
 };
 
 export default Tags
