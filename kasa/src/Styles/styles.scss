@@ -11,6 +11,7 @@ $white : #FFFFFF ;
 }
 
 body {
+    
     font-family: Montserrat;
 
 }
@@ -36,12 +37,3 @@ main {
 .none {
     display: none !important;
 }
-
-// Définition de la mixin pour les media queries
-@mixin respond-to($breakpoint) {
-    @if $breakpoint == 'mobile' {
-      @media (max-width: 724px) {
-        @content;
-      }
-    }
-  }
