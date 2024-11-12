@@ -6,7 +6,7 @@
 Créez une application web de location immobilière avec React
 
 ## Description
-Dans ce projet, vous allez développer l'interface front-end d'une application de location immobilière en utilisant React et React Router. L'objectif est de fournir une expérience utilisateur moderne et réactive, avec un design adaptatif et des animations CSS pour améliorer l'interactivité.
+Ce projet consiste à concevoir l'interface front-end d'une application de location immobilière en utilisant React et React Router pour la navigation. L'application offre une expérience utilisateur fluide et moderne, avec des composants dynamiques et stylisés pour visualiser des locations immobilières. Des animations CSS ont été intégrées pour renforcer l'expérience utilisateur, et le code est structuré de manière modulaire et réutilisable, conforme aux bonnes pratiques de développement front-end.
 
 ## Objectifs
 - Utiliser React pour concevoir une application web dynamique.
