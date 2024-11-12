@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="./src/assets/logo.png" alt="Logo Kasa" >
+    <img src="./kasa/src/assets/logo.png" alt="Logo Kasa" >
 </div>
 
 # Projet 5 : 
