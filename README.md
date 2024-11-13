@@ -2,8 +2,7 @@
     <img src="./kasa/src/assets/logo.png" alt="Logo Kasa" >
 </div>
 
-# Projet 5 : 
-Créez une application web de location immobilière avec React
+# Projet 5 : Créez une application web de location immobilière avec React
 
 ## Description
 Ce projet consiste à concevoir l'interface front-end d'une application de location immobilière en utilisant React et React Router pour la navigation. L'application offre une expérience utilisateur fluide et moderne, avec des composants dynamiques et stylisés pour visualiser des locations immobilières. Des animations CSS ont été intégrées pour renforcer l'expérience utilisateur, et le code est structuré de manière modulaire et réutilisable, conforme aux bonnes pratiques de développement front-end.
